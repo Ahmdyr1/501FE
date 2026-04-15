@@ -47,11 +47,11 @@ export const Login: React.FC = () => {
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
               <input
-                type="email"
+                type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors"
-                placeholder="you@example.com"
+                placeholder="admin / ins / student"
                 required
               />
             </div>

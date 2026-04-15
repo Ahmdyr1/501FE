@@ -47,26 +47,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     // --- HARDCODED TEST CREDENTIALS (Priority) ---
     if (password === '123') {
-      if (normalizedEmail === 'ad@gmail.com') {
+      if (normalizedEmail === 'admin') {
         foundUser = {
           id: 'admin-test',
-          email: 'ad@gmail.com',
+          email: 'admin',
           firstName: 'Admin',
           lastName: 'User',
           role: UserRole.ADMIN
         };
-      } else if (normalizedEmail === 'ins@gmail.com') {
+      } else if (normalizedEmail === 'ins') {
         foundUser = {
           id: 'instructor-test',
-          email: 'ins@gmail.com',
+          email: 'ins',
           firstName: 'Test',
           lastName: 'Instructor',
           role: UserRole.DRIVER
         };
-      } else if (normalizedEmail === 'stu@gmail.com') {
+      } else if (normalizedEmail === 'student') {
         foundUser = {
           id: 'student-test',
-          email: 'stu@gmail.com',
+          email: 'student',
           firstName: 'Test',
           lastName: 'Student',
           role: UserRole.STUDENT
