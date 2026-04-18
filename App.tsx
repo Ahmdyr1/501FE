@@ -6,6 +6,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import { DataProvider } from './contexts/DataContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { UserRole } from './types';
+import { Analytics } from '@vercel/analytics/react';
 
 // Pages
 import { Home } from './pages/Home';
@@ -55,6 +56,7 @@ function App() {
           </Layout>
         </HashRouter>
       </DataProvider>
+      <Analytics />
     </AuthProvider>
   );
 }
